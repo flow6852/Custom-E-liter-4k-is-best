@@ -1,0 +1,72 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: cee0989336c771aa062f3f212cab48a8e212ea74e5277935b0398e8d584cca0d
+
+name:           Custom-E-liter-4k-is-best
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/Custom-E-liter-4k-is-best#readme>
+homepage:       https://github.com/githubuser/Custom-E-liter-4k-is-best#readme
+bug-reports:    https://github.com/githubuser/Custom-E-liter-4k-is-best/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/Custom-E-liter-4k-is-best
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_Custom_E_liter_4k_is_best
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , authenticate-oauth
+    , base >=4.7 && <5
+    , bytestring
+    , http-conduit
+    , text
+    , time
+  default-language: Haskell2010
+
+executable Custom-E-liter-4k-is-best-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_Custom_E_liter_4k_is_best
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Custom-E-liter-4k-is-best
+    , base >=4.7 && <5
+    , directory
+    , text
+  default-language: Haskell2010
+
+test-suite Custom-E-liter-4k-is-best-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_Custom_E_liter_4k_is_best
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Custom-E-liter-4k-is-best
+    , base >=4.7 && <5
+    , directory
+    , text
+  default-language: Haskell2010
